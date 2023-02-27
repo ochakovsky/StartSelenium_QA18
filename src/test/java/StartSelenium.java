@@ -21,6 +21,7 @@ public class StartSelenium {
 //        wd.navigate().forward();
 //        wd.navigate().back();
     }
+
     @Test
     public void testLogin() {
 //        System.out.println("Test is over");
