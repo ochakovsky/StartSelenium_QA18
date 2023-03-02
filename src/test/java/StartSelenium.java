@@ -26,13 +26,18 @@ public class StartSelenium {
     public void testLogin() {
 //        System.out.println("Test is over");
         WebElement element = wd.findElement(By.tagName("a"));
+        wd.findElement(By.xpath("//a"));
         WebElement form = wd.findElement(By.tagName("form"));
         List<WebElement> elements = wd.findElements(By.tagName("a"));
         System.out.println(elements.size());
 
         WebElement root = wd.findElement(By.id("root"));
         wd.findElement(By.className("navbar-component_nav__1X_4m"));
+        wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
+        wd.findElement(By.cssSelector("[class='navbar-component_nav__1X_4m']"));
+        wd.findElement(By.xpath("//*[@class='navbar-component_nav__1X_4m']"));
         wd.findElement(By.linkText("Registration"));
+        wd.findElement(By.cssSelector("*[name^='LO']"));
         wd.findElement(By.name("password"));
         wd.findElement(By.partialLinkText("LOG"));
     }
